@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathify | Find Your Path</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5ff;
+            color: #202044;
+        }
+
+        header {
+            padding: 22px;
+            text-align: center;
+            background: white;
+        }
+
+        header h2 {
+            margin: 0;
+            color: #6257d9;
+        }
+
+        main {
+            max-width: 650px;
+            margin: 70px auto;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .tagline {
+            color: #666680;
+            line-height: 1.7;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 13px 25px;
+            border-radius: 9px;
+            background: #6257d9;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .secondary {
+            background: white;
+            color: #6257d9;
+            border: 1px solid #6257d9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Pathify</h2>
+    </header>
+
+    <main>
+        <h1>Welcome to Pathify!</h1>
+
+        <p class="tagline">
+            Find your path. Discover your opportunities.
+            Build the future you want.
+        </p>
+
+        <button class="btn"
+            onclick="showMessage('Sign Up')">
+            Sign Up
+        </button>
+
+        <button class="btn secondary"
+            onclick="showMessage('Log In')">
+            Log In
+        </button>
+
+        <p id="message"></p>
+    </main>
+
+    <footer>
+        Your journey starts here.
+    </footer>
+
+    <script>
+        function showMessage(action) {
+            document.getElementById("message").textContent =
+                action + " will be available soon!";
+        }
+    </script>
+</body>
+</html>
